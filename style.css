@@ -1,0 +1,116 @@
+body {
+    direction: rtl;
+    background-image: url('bg.jpg');
+    background-repeat : no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color:rgb(255, 255, 255);
+}
+
+*{
+  font-family: Tajawal;
+}
+
+
+/* الخطوط  */
+@font-face {
+    font-family: 'Tajawal';
+    src:  url('tajawal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+     
+
+
+/*  مربع ادخال البيانات */
+.HomsForm{
+    opacity: 0.8;
+    background-color: #000000;
+    width:70%;
+    max-width: 30cm;
+    border-radius: 0.3cm;
+    margin: 0 auto;
+    padding-right:1cm;
+    padding-left:1cm;
+    color:rgb(255, 255, 255);
+    border-width: 0.01cm;
+    border-color: rgb(255, 255, 255);
+}
+
+.HomsForm input {
+    width:100%;
+    font-size: 0.6cm;
+    border-radius: 0.1cm;
+    background-color: rgb(31, 30, 30);
+    color:rgb(255, 255, 255);
+    border-width: 0.01cm;
+    border-color: rgb(255, 255, 255);
+}
+
+.HomsForm textarea {
+    width:100%;
+    font-size: 0.6cm;
+    border-radius: 0.1cm;
+    min-height: 4cm;
+    background-color: rgb(31, 30, 30);
+    color:rgb(255, 255, 255);
+}
+
+.HomsForm select{
+    width:100%;
+    font-size: 0.6cm;
+    border-radius: 0.1cm;
+    background-color: rgb(31, 30, 30);
+    color:rgb(255, 255, 255);
+}
+
+.HomsForm p {
+    font-size: 0.5cm;
+}
+
+.HomsForm li {
+    font-size: 0.5cm;
+}
+
+.HomsForm .smallP {
+    font-size: 0.45cm;
+}
+
+.HomsForm a {
+    color :#2fbdff;
+    text-decoration: none;
+    font-size: 0.5cm;
+}
+
+
+/* تصاميم الازرار */
+.HomsButton{
+    font-size: 0.7cm;
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(34, 121, 60), rgb(21, 124, 76));
+    min-height: 1.5cm;
+    padding-left: 0.4cm;
+    padding-right: 0.4cm;
+    border-radius: 0.08cm;
+    border-width:0;
+    margin:0.5cm;
+}
+
+.Bigger{
+    transition: transform 0.3s ease-in-out;
+     
+}
+
+.Bigger:hover {
+    transform: scale(1.2) translateX(-7px); 
+  }
+
+
+.nav{
+    background-color: #000000;
+    margin-top: -0.5cm;
+    height: 2.4cm;
+    font-size: 0.6cm;
+    opacity: 0.85;
+}
