@@ -1,132 +1,169 @@
-body {
-    direction: rtl;
-    background-image: url('bg.jpg');
-    background-repeat : no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    color:rgb(255, 255, 255);
-    overflow-x: hidden;
-}
-
+/* --------------------- Settings ------------------------*/
 *{
+  
   font-family: Tajawal;
+  
 }
 
 
-/* الخطوط  */
+@keyframes NavColor {
+  0%{
+      background-color: rgb(187, 7, 7);
+  }
+
+
+  25%{
+      
+      background-color: rgb(141, 26, 135);
+  }
+
+  50%{
+      
+    background-color: rgb(120, 25, 230);
+  }
+
+  75%{
+      
+    background-color: rgb(153, 5, 91);
+  }
+
+  100%{
+    background-color: rgb(187, 7, 7);
+  }
+
+}
+
+@keyframes LoadAnmi {
+  0% {
+    transform: translate(100,0);
+  }
+  25%{
+    transform: translate(-100px,0);
+  }
+  75%{
+    transform: translate(100px,0);
+  }
+  75%{
+    transform: translate(-100,0);
+  }
+}
+
 @font-face {
-    font-family: 'Tajawal';
-    src:  url('tajawal.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-     
-
-
-/*  مربع ادخال البيانات */
-.HomsForm{
-    opacity: 0.87;
-    background-color:rgb(219, 217, 217);
-    width:30%;
-    max-width: 30cm;
-    border-radius: 0.3cm;
-    margin-right:8%;
-    padding-right:1.5cm;
-    padding-left:1cm;
-    color:rgb(0, 0, 0);
-    border-width: 0.01cm;
-    border-color: rgb(255, 255, 255);
-}
-
-@media (max-width: 800px) {
-
-    .HomsForm {
-        margin:0 auto;
-        width:60%;
-    }
-
-}
-
-.HomsForm input {
-    width:100%;
-    font-size: 0.6cm;
-    border-radius: 0.1cm;
-    background-color: rgb(31, 30, 30);
-    color:rgb(255, 255, 255);
-    border-width: 0.01cm;
-    border-color: rgb(255, 255, 255);
-}
-
-.HomsForm textarea {
-    width:100%;
-    font-size: 0.6cm;
-    border-radius: 0.1cm;
-    min-height: 4cm;
-    background-color: rgb(31, 30, 30);
-    color:rgb(255, 255, 255);
-}
-
-.HomsForm select{
-    width:100%;
-    font-size: 0.6cm;
-    border-radius: 0.1cm;
-    background-color: rgb(31, 30, 30);
-    color:rgb(255, 255, 255);
-}
-
-.HomsForm ul {
-    padding: 0;
-}
-
-.HomsForm p {
-    font-size: 0.5cm;
-}
-
-.HomsForm li {
-    font-size: 0.5cm;
-}
-
-.HomsForm .smallP {
-    font-size: 0.45cm;
-}
-
-.HomsForm a {
-    color :#2fbdff;
-    text-decoration: none;
-    font-size: 0.5cm;
+  font-family: 'Tajawal';
+  src:  url('tajawal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
-/* تصاميم الازرار */
-.HomsButton{
-    font-size: 0.7cm;
-    color:rgb(255, 255, 255);
-    background-image: linear-gradient(rgb(34, 121, 60), rgb(21, 124, 76));
-    min-height: 1.5cm;
-    padding-left: 0.4cm;
-    padding-right: 0.4cm;
-    border-radius: 0.08cm;
-    border-width:0;
-    margin:0.5cm;
+
+@font-face {
+  font-family: 'Diwani';
+  src:  url('diwani.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.Bigger{
-    transition: transform 0.3s ease-in-out;
-     
+.Doran:hover{
+                
+  transform:rotate(360deg);
+  transition: all 3s;
 }
 
-.Bigger:hover {
-    transform: scale(1.2) translateX(-7px); 
-  }
+.Load{
+  animation: LoadAnmi 2s 1 forwards;
+}
 
 
-.nav{
-    background-color: #000000;
-    margin-top: -0.5cm;
-    height: 2.4cm;
-    font-size: 0.6cm;
-    opacity: 0.84;
-    margin-right: -0.5cm;
-    margin-left: -0.5cm;
+
+/* -----------------------------------------------------*/
+
+nav{
+  background-color: rgb(138, 0, 156);
+  border-bottom-left-radius: 0.55cm;
+  border-bottom-right-radius: 0.55cm;
+  animation-name: NavColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+body {
+    background-color: rgb(34, 34, 34) !important;
+    color: #ffffff !important;
+    direction: rtl;
+}
+
+
+.zebutton{
+  border-color: black;
+  border-width: 1px;
+  border-radius: 20px;
+  color:white;
+  background:rgb(8, 88, 179);
+  width: 180px;
+  height: 50px;
+  font-size: 22px;
+}
+
+.zebutton:hover {
+  background-color: rgb(54, 164, 253);
+ 
+}
+
+a{
+  text-decoration: none ; 
+  color: rgb(60, 137, 253);
+  font-size: 0.5cm;
+}
+
+footer{
+  background-color: rgb(49, 49, 49);
+  text-align: center;
+
+}
+
+
+.article{
+  background-color: rgb(245, 245, 245);
+  color : black;
+  opacity:0.85;
+  border-radius: 0.5cm;
+  width:90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.6cm;
+  min-height: 10cm;
+}
+
+.article ul{
+  margin-right: 1.5cm;;
+}
+
+.article p{
+  font-size: 0.5cm;
+  margin-right: 1.5cm;
+}
+
+.article ul li p {
+  margin-right: 0;
+}
+
+
+.articleBody{
+  background-image: url(../imgs/img1.jpeg);
+  background-repeat : no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+p{
+  font-size: 0.4cm;
+}
+
+video {
+  border-radius: 0.5cm;
+  
 }
